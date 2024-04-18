@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Bulma Version 1-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@1.0.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@1.0.0/css/bulma.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
 
-    <meta property="og:url"                content="https://notinmyname.be" />
-    <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="#Notinmyname" />
-    <meta property="og:description"        content="Allonger la durée des études? #Notinmyname" />
-    <meta property="og:image"              content="https://www.notinmyname.be/fbimg.png" />
+    <meta property="og:url" content="https://notinmyname.be"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="#Notinmyname"/>
+    <meta property="og:description" content="Allonger la durée des études? #Notinmyname"/>
+    <meta property="og:image" content="https://www.notinmyname.be/fbimg.png"/>
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="#Notinmyname">
@@ -31,15 +31,16 @@
 
     <style>
         .shrikhand-regular {
-              font-family: "Shrikhand", serif;
-              font-weight: 400;
-              font-style: normal;
-            }
+            font-family: "Shrikhand", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
         .averia-serif-libre-regular {
-              font-family: "Averia Serif Libre", serif;
-              font-weight: 400;
-              font-style: normal;
-            }
+            font-family: "Averia Serif Libre", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
         h1.title {
             font-size: 3em;
@@ -49,31 +50,89 @@
             background-color: #f6eed9;
         }
 
-        #vote {
-            max-width: 70%;
-            max-height: 60%;
-            width: 70%;
+        .vote {
+            max-width: 100%;
+            max-height: 250px;
+        }
+
+        .vote.is-hidden-tablet {
+            max-height: 150px;
         }
     </style>
 </head>
 
 <body>
-    <section class="hero is-info is-fullheight">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <div class="column is-8 is-offset-2">
-                        <h1 class="title averia-serif-libre-regular">
-                            Allonger la durée des études?
-                        </h1>
-                        <img id="vote" alt="Vote pour l'allongement 8 pour (PS/Ecolo/PTB), 5 contre (MR/Engagés)" src="vote.jpg">
-                        <h1 class="title shrikhand-regular">
-                            #Notinmyname
-                        </h1>
-                    </div>
-                </div>
+<section class="hero is-info">
+    <div class="hero-body">
+        <div class="columns has-text-centered is-vcentered">
+            <div class="column is-3 is-hidden-mobile">
+                <img class="vote" alt="Vote pour l'allongement 8 pour (PS/Ecolo/PTB), 5 contre (MR/Engagés)"
+                     src="vote.jpg">
             </div>
+            <div class="column is-8">
+                <h1 class="title averia-serif-libre-regular">
+                    Allonger la durée des études?
+                </h1>
 
-    </section>
+                <img class="vote is-hidden-tablet"
+                     alt="Vote pour l'allongement 8 pour (PS/Ecolo/PTB), 5 contre (MR/Engagés)" src="vote.jpg">
+
+                <h1 class="title shrikhand-regular">
+                    #Notinmyname
+                </h1>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section>
+    <div class="container  p-4">
+        <h3 class="subtitle">Principales modifications de la réforme du décret Paysage qui résultent des amendements
+            votés par le PTB-PS-Ecolo à la Commission de l’Enseignement Supérieur ce 17 avril :</h3>
+
+        <div class="content">
+            <ul>
+                <li>Etudiants dont la première inscription dans un cycle remonte avant l’entrée en vigueur, qui n’ont
+                    pas encore validés tous leurs crédits à la fin de la période de transition de deux ans (2022-2023 et
+                    2023-2024) et qui étaient finançables en 2022-2023 (selon les règles du décret Paysage de 2014) :
+                    ils sont automatiquement déclarés finançables pour 2024-2025 quel que soient le nombre de crédits
+                    réussis au cours de cette année 2023-24 ;
+                </li>
+                <li>Moratoire général pour les étudiants inscrits au cours de l’année académique 2023-24 et qui n’ont
+                    pas réussi les 60 crédits du premier bloc au terme des deux premières années : ils sont
+                    automatiquement déclarés finançables pour 2024-2025 à condition d’avoir valorisé 45 crédits de leur
+                    cursus (donc pas du premier bloc !) ;
+                </li>
+                <li>La non-finançabilité des étudiants qui ont réussi la totalité des crédits lorsque leur PAE est
+                    inférieur à 45 crédits (sauf le cas de l’allègement) a été supprimée ;
+                </li>
+                <li>La réorientation remet les compteurs à zéro pour autant que cette réorientation intervienne après la
+                    deuxième inscription (donc lorsque la réorientation correspond à la troisième inscription).
+                </li>
+                <li>Obligations particulièrement lourdes de collecte, traitement et communication des données relatives
+                    aux réussites et à la finançabilité.
+                </li>
+            </ul>
+
+            <p>Ces modifications permettent donc un allongement de la durée des études d’un an, sans prise en
+                considération de la question de savoir si l’étudiant est sur une trajectoire de réussite ou non
+                (perspectives sérieuses d’obtenir un diplôme), encouragent l’étudiant à se réorienter le plus tard
+                possible (remise des compteurs à zéro seulement si la réorientation intervient après la deuxième
+                inscription) et rompt, de manière fondamentale, l’égalité entre les étudiants. Le fait de faire marche
+                arrière sur un dispositif phare de de la réforme (obligation de valider les crédits du BA1 en deux ans)
+                en ce qui concerne les étudiants dont la première inscription est postérieure à l’entrée en vigueur de
+                la réforme, met celle-ci à mal.</p>
+
+            <p><b>Si vous n’êtes pas d’accord avec ces mesures, nous vous invitons à signer la pétition #Notinmyname que
+                nous remettrons aux députés le jour du vote prévue en séance plénière.</b></p>
+        </div>
+        <p class="has-text-centered">
+            <a class="button is-large is-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeWJfuowPQQ9yUIO2JgRahdhebRXVE8mEzW1C1Way6lY_AlhA/viewform?usp=sf_link">Signer
+                la pétition</a>
+        </p>
+    </div>
+</section>
+
 </body>
 
 </html>
