@@ -131,9 +131,15 @@
         </div>
         <p class="has-text-centered">
             <a class="button is-large is-link"
-               href="https://docs.google.com/forms/d/e/1FAIpQLSeWJfuowPQQ9yUIO2JgRahdhebRXVE8mEzW1C1Way6lY_AlhA/viewform?usp=sf_link">Signer
-                la pétition</a>
+               href="https://docs.google.com/forms/d/e/1FAIpQLSeWJfuowPQQ9yUIO2JgRahdhebRXVE8mEzW1C1Way6lY_AlhA/viewform?usp=sf_link">
+                <span>Signer la pétition</span>
+            </a>
+
+
         </p>
+        <div class="signataires has-text-centered mt-3 is-hidden">
+            <span class="tag is-success is-light is-medium">Déjà&nbsp;<b class="signataires-nb">663</b>&nbsp;signataires!</span>
+        </div>
         <div class="has-text-centered mt-3">
             <div class="level" style="display: inline-flex;">
                 <div class="level-item has-text-centered">
@@ -235,6 +241,9 @@
                 Signer la pétition
             </a>
         </p>
+        <div class="signataires has-text-centered mt-3 is-hidden">
+            <span class="tag is-success is-light is-medium">Déjà&nbsp;<b class="signataires-nb">663</b>&nbsp;signataires!</span>
+        </div>
         <div class="has-text-centered mt-3">
             <div class="level" style="display: inline-flex;">
                 <div class="level-item has-text-centered">
@@ -282,7 +291,14 @@
         blanche</a>
     </div>
 </section>
+<script type="text/javascript">
+    const url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT856M8fPtc2Uaf8-C0fvXaid0AqwnJBeZPEn92iHBK5uhOtuytzp--ZQAjVA7ybExHzXggXh11nRcM/pub?gid=945562991&single=true&output=csv";
+    fetch(url).then(t => t.text()).then(t => {
+        Array.from(document.getElementsByClassName("signataires-nb")).forEach(elem => elem.textContent = t);
+        Array.from(document.getElementsByClassName("signataires")).forEach(elem => elem.classList.remove("is-hidden"));
+    });
 
+</script>
 </body>
 
 </html>
