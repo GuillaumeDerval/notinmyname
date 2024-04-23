@@ -77,9 +77,33 @@
                      src="vote.jpg">
             </div>
             <div class="column is-8">
-                <h1 class="title averia-serif-libre-regular">
-                    Allonger la durée des études?
+                <h1 id="main-title" class="title averia-serif-libre-regular">
+                    <noscript>Allonger la durée des études?</noscript>
                 </h1>
+                <script type="text/javascript">
+                    //coeur sur toi, ChatGTP, toi qui m'a permis d'économiser de réviser ce language pourri.
+                    const slogans = [
+                        "Allongement des études ?",
+                        "Illusion de réussite ?",
+                        "Changements de règles précipités ?",
+                        "Retard des réorientations ?"
+                    ];
+
+                    function changeSlogan() {
+                      // Select a random slogan from the array
+                      const slogan = slogans[Math.floor(Math.random() * slogans.length)];
+
+                      // Find the div with the id 'slogan' and change its content
+                      const sloganDiv = document.getElementById('main-title');
+                      sloganDiv.textContent = slogan;
+                    }
+
+                    // Set an interval to change the slogan every 10 seconds
+                    setInterval(changeSlogan, 10000);
+
+                    // Optionally, change the slogan immediately when the page loads
+                    changeSlogan();
+                </script>
 
                 <img class="vote is-hidden-tablet"
                      alt="Vote pour l'allongement 8 pour (PS/Ecolo/PTB), 5 contre (MR/Engagés)" src="vote.jpg">
@@ -297,7 +321,6 @@
         Array.from(document.getElementsByClassName("signataires-nb")).forEach(elem => elem.textContent = t);
         Array.from(document.getElementsByClassName("signataires")).forEach(elem => elem.classList.remove("is-hidden"));
     });
-
 </script>
 </body>
 
